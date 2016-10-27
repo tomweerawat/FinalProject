@@ -38,7 +38,7 @@ public class ShowFeed extends android.support.v4.app.Fragment implements Callbac
     private RecyclerView.LayoutManager mLayoutManager;
     private RecyclerView recyclerView;
     private DataAdapter dataAdapter;
-    //http://192.168.25.2:8181/weerawat/
+    //http://192.168.25.2:8181/weerawat/ https://weerawatcomsci.github.io/feed/
     String API = "http://192.168.25.2:8181/weerawat/";
 
     public static ShowFeed createInstance(int itemsCount) {
