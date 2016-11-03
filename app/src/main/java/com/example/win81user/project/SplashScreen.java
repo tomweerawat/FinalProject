@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.example.win81user.project.View.PartThreeActivity;
+import com.example.win81user.project.DrawerActivity.ActivityHome;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -21,7 +21,7 @@ public class SplashScreen extends AppCompatActivity {
                 } catch (InterruptedException e) {
                     Log.d("Exception", "Exception" + e);
                 } finally {
-                    startActivity(new Intent(SplashScreen.this, PartThreeActivity.class));
+                    startActivity(new Intent(SplashScreen.this, ActivityHome.class));
                 }
                 finish();
             }

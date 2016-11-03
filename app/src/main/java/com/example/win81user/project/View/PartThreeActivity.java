@@ -3,7 +3,6 @@ package com.example.win81user.project.View;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -14,12 +13,12 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.PopupWindow;
 
+import com.example.win81user.project.DrawerActivity.ActivityHome;
 import com.example.win81user.project.Fragments.CallFragment;
 import com.example.win81user.project.Fragments.MapNearBy;
 import com.example.win81user.project.R;
@@ -65,16 +64,20 @@ public class PartThreeActivity extends AppCompatActivity {
         setTitle(getString(R.string.app_name));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-
+        //getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu);
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = getIntent();
+               /* Intent i = getIntent();
                 i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 i.putExtra("color", Color.WHITE);
                 startActivity(i);
-                Log.d("Tom", "button button button..................");
+                Log.d("Tom", "button button button..................");*/
 
+
+                startActivity(new Intent(PartThreeActivity.this, ActivityHome.class));
+
+                // finish();คำสั่งย้อนกลับหน้าก่อนหน้า
 
             }
         });

@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView1"
         android:gravity="center"
-        android:text="Calls"
+        android:text="Login Module is not Available right now"
         android:textSize="30sp" />
 
 </RelativeLayout>

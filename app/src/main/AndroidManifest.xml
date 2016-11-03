@@ -40,6 +40,7 @@
         <activity android:name=".GoogleAuthentication.MainActivity" />
         <activity android:name=".View.PartThreeActivity" />
         <activity android:name=".GoogleAuthentication.ShowProfile"/>
+        <activity android:name=".DrawerActivity.ActivityHome"/>
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
